@@ -1,0 +1,16 @@
+{
+  "name": "dragonage_battlemanager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "https://github.com/Jerem2801/DragonAge_BattleManager.git",
+  "author": "Jerem",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "electron": "^6.0.2"
+  }
+}
