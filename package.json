@@ -1,7 +1,7 @@
 {
   "name": "dragonage_battlemanager",
   "version": "1.0.0",
-  "description": "",
+  "description": "For Create Character and have a monitor for battle in Dragon Age RPG tabletop",
   "main": "index.js",
   "scripts": {
     "start": "electron .",
@@ -12,5 +12,8 @@
   "license": "GPL-3.0",
   "devDependencies": {
     "electron": "^6.0.2"
+  },
+  "dependencies": {
+    "custom-electron-titlebar": "^3.1.0"
   }
 }

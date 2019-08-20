@@ -2,10 +2,20 @@
 <html>
 <head>
     <meta charset="UTF-8">
-
+    <link rel="stylesheet" href="./src/w3.css">
+    <link rel="stylesheet" href="./src/titlebar/titlebar.css">
     <title>Dragon Age</title>
 </head>
-<body>
-    <h1>HelloWorld</h1>
+<body class="prout">
+    <div id="titlebar" class="w3-bar w3-text-white red sticky" style="width:100%;">
+        <button class="w3-button w3-ripple w3-right button-titlebar" onClick="closeWindows();"><img class="icon" src="./image/titlebar/close.png"></button>
+        <button class="w3-button w3-ripple w3-right button-titlebar" onClick="maximizeWindows();"><img class="icon" src="./image/titlebar/maximize.png"></button>
+        <button class="w3-button w3-ripple w3-right button-titlebar" onClick="minimizeWindows();"><img  class="icon" src="./image/titlebar/minimize.png"></button>
+    </div>
+<div class="scrollable">
+
+</div>
+    <script src="./renderer.js"></script>
+    <script src="./src/titlebar/titlebar.js"></script>
 </body>
 </html>

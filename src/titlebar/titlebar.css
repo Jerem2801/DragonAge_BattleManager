@@ -1,0 +1,17 @@
+#titlebar {
+    -webkit-app-region: drag;
+}
+button {
+    -webkit-app-region: no-drag;
+}
+.red{
+    background-color:#c10d1f;
+}
+.button-titlebar{
+    padding:0px;
+    height:1.8em;
+    width:1.8em;
+}
+.icon{
+    height:1.5em;
+}
