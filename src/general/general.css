@@ -1,0 +1,21 @@
+#titlebar {
+    -webkit-app-region: drag;
+}
+button {
+    -webkit-app-region: no-drag;
+}
+.red{
+    background-color:#c10d1f;
+}
+.title-container{
+    text-align: center;
+    color:white;
+    margin-top: 10px;
+    border-top-left-radius : 8px;
+    border-top-right-radius : 8px;
+    background-color: #c10d1f;
+    text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
+}
+.box-container{
+    border-radius: 8px;
+}

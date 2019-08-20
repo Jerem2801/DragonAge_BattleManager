@@ -1,0 +1,62 @@
+Battle Manager Dragon Age v0.1.0
+
+*** Création de Personnage ***
+
+Ecran pour crée les personnage PJ et PNJ à utiliser dans le tableu de suivi de combat (TSC).
+
+Action possible :
+
+--- Crée un personnage ---
+
+Formulaire à remplir :
+	- Nom
+	- Classe
+	- Race
+	- Attributs et Focus
+	- Rapidité
+	- Armure
+	- Defense
+	- Points de Vie
+	- Points de Mana
+	- Arme, jets d'attaque et jet de dégats
+	- Prouesse Favorite
+	- Sorts
+	- Talents et niveau du talents
+	- Groupe d'armes
+	- Equipement avec arme, armure, munitions et objets divers
+
+--- Supprimer un personnage crée ---
+
+--- Modifier un personnage crée ---
+
+--- Copier un personnage crée ---
+
+
+*** Tableau de Suivi de Combat ***
+
+Ecran pour suivire les combats avec tout les paramètres des personnages.
+
+Action possible :
+
+--- Crée un combat ---
+
+	- Ajouter des Personnages dans un combats (Définir si PJ, PNJ Allié, Neutre ou Ennemie)
+	- Supprimer des Personnages d'un combats
+	- Sauvegarder la configuration
+
+--- Lancer un Combat ---
+
+	- Rentrer les initiatives des PJs, et l'app fait l'initiative des autres personnages avec un lancé de 3d6 + Dex. (+ Initiative).
+
+--- Gerer un Combat ---
+
+	- Faire passer le tour des joueurs et un compteur de tour général
+	- Ajouter, Modifier ou Supprimer des Etats au Personnage avec un Timer en tour (ou pas) qui se résout tout seul
+	- Supprimer un Personnage
+	- Modifier un Personnage et son Alégeance
+	- Modifier les PVs d'un Personnage
+	- Afficher le détails du personnage en cours et d'un personnage ciblé
+	- Lanceur de Dé avec Stunt Points
+
+
+

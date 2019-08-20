@@ -2,20 +2,66 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <!-- CSS -->
     <link rel="stylesheet" href="./src/w3.css">
     <link rel="stylesheet" href="./src/titlebar/titlebar.css">
+    <link rel="stylesheet" href="./src/general/general.css">
     <title>Dragon Age</title>
 </head>
-<body class="prout">
+<body>
     <div id="titlebar" class="w3-bar w3-text-white red sticky" style="width:100%;">
         <button class="w3-button w3-ripple w3-right button-titlebar" onClick="closeWindows();"><img class="icon" src="./image/titlebar/close.png"></button>
         <button class="w3-button w3-ripple w3-right button-titlebar" onClick="maximizeWindows();"><img class="icon" src="./image/titlebar/maximize.png"></button>
         <button class="w3-button w3-ripple w3-right button-titlebar" onClick="minimizeWindows();"><img  class="icon" src="./image/titlebar/minimize.png"></button>
     </div>
-<div class="scrollable">
 
-</div>
+    <div class="w3-sidebar w3-bar-block red w3-text-white w3-card" style="width:130px">
+        <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'Character')">Personnage</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'Fight')">Combat</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'Version')">Version</button>
+    </div>
+
+    <div style="margin-left:130px;height:100%">
+
+        <!-- CHARACTER TAB-->
+        <div id="Character" class="w3-container tab" style="display:none">
+
+            <div class="w3-card-4 w3-margin w3-white box-container">
+                <h3 class="title-container"><b>Création Personnage</b></h3>
+                <div class="w3-row-padding" style="text-align:center;padding:1em">
+                    <div class="w3-half">
+                        <input id="name" class="w3-input w3-border" type="text" placeholder="Nom">
+                    </div>
+                    <div class="w3-half">
+                        <button class="w3-btn w3-black w3-text-white w3-round-large" onClick="createCharacter();" style="width:100%">Ajouter</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="Fight" class="w3-container tab" style="display:none">
+
+
+        </div>
+
+        <!-- VERSION TAB-->
+        <div id="Version" class="w3-container tab" style="display:none;text-align:center">
+            <div class="w3-padding"><img src="image/dragonage.png" style="width:75%"/></div>
+            <div>
+                <p>Version : <strong id="version"></strong></p>
+                <p>Auteur : <strong>Jerem</strong></p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JAVASCRIPT -->
     <script src="./renderer.js"></script>
+    <script src="./src/general/stringUtils.js"></script>
+    <script src="./src/general/storage.js"></script>
     <script src="./src/titlebar/titlebar.js"></script>
+    <script src="./src/sidebar/sidebar.js"></script>
+    <script src="./src/character/creation/creation.js"></script>
 </body>
 </html>

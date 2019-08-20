@@ -28,7 +28,7 @@ function createWindow () {
     mainWindow = null;
   })
 
-  //mainWindow.webContents.openDevTools();
+  mainWindow.webContents.openDevTools();
 }
 
 app.on('ready', createWindow);
@@ -61,4 +61,10 @@ ipc.on("maximize", function (event, arg) {
 
 ipc.on("minimize", function (event, arg) {
     mainWindow.minimize();
+})
+
+// EVENT FROM SIDEBAR
+ipc.on("version", function (event) {
+    var versionInit = app.getVersion();
+    event.sender.send("reponse-version", versionInit);
 })
