@@ -6,9 +6,12 @@ function createCharacter(){
 			if (error) throw error;
 
 			if(Object.keys(data).length === 0){
-				console.log("Peut etre créé");
+				document.getElementById("createCharacterModal").style.display="block";
+				 
 			}else{
-				console.log("Existe déjà");
+				var errorTitle = "Personnage déjà existant";
+				var errorMsg = "Le Personnage " + name + " existe déjà. Merci de crée un nouveau Personnage.";
+				ipc.send("error",errorTitle,errorMsg);
 			}
 		})
 	}

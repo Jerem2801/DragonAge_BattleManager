@@ -1,0 +1,458 @@
+[
+    {
+        "description": "La Volonté englobe la résistance mentale, la discipline et la confiance en soi.",
+        "focus": {
+            "courage": {
+                "description": "surmonter sa peur face à l’adversité.",
+                "id": "courage",
+                "name": "Courage"
+            },
+            "faith": {
+                "description": "puiser une force intérieure dans les convictions spirituelles ou morales.",
+                "id": "faith",
+                "name": "Foi"
+            },
+            "morale": {
+                "description": "maintenir la bonne humeur et la confiance en soi ou en son groupe. Les PNJ utilisent cette compétence plus souvent que les personnages joueurs.",
+                "id": "morale",
+                "name": "Moral"
+            },
+            "self_discipline": {
+                "description": "concentrer son énergie mentale ou contrôler ses impulsions et ses émotions.",
+                "id": "self_discipline",
+                "name": "Maîtrise de soi"
+            }
+        },
+        "id": "willpower",
+        "name": "Volonté"
+    },
+    {
+        "description": "La Magie détermine la puissance mystique innée de votre personnage.",
+        "focus": {
+            "arcane_lance": {
+                "description": "utiliser la capacité de classe de mage du même nom.",
+                "id": "arcane_lance",
+                "name": "Trait mystique"
+            },
+            "blood": {
+                "description": "comprendre l’art interdit de la Magie du sang.",
+                "id": "blood",
+                "name": "Sang"
+            },
+            "creation": {
+                "description": "comprendre les arcanes de l’école de magie de Création.",
+                "id": "creation",
+                "name": "Création"
+            },
+            "entropy": {
+                "description": "comprendre les arcanes de l’école de magie d’Entropie.",
+                "id": "entropy",
+                "name": "Entropie"
+            },
+            "primal": {
+                "description": "comprendre les arcanes de l’école de magie des Éléments.",
+                "id": "primal",
+                "name": "Éléments"
+            },
+            "spirit": {
+                "description": "comprendre les arcanes de l’école de magie d’Esprit.",
+                "id": "spirit",
+                "name": "Esprit"
+            }
+        },
+        "id": "magic",
+        "name": "Magie"
+    },
+    {
+        "description": "La Ruse mesure l’intelligence, les connaissances et la culture générale de votre personnage.",
+        "focus": {
+            "arcane_lore": {
+                "description": "connaître la magie, ses traditions et l’Immatériel.",
+                "id": "arcane_lore",
+                "name": "Connaissances mystiques"
+            },
+            "brewing": {
+                "description": "produire de la bière, du vin et d’autres mixtures.",
+                "id": "brewing",
+                "name": "Brasserie"
+            },
+            "cartography": {
+                "description": "tracer et lire des cartes.",
+                "id": "cartography",
+                "name": "Cartographie"
+            },
+            "cryptography": {
+                "description": "créer et déchiffrer des codes et des messages codés.",
+                "id": "cryptography",
+                "name": "Cryptographie"
+            },
+            "cultural_lore": {
+                "description": "connaître les traditions et les croyances de diverses cultures.",
+                "id": "cultural_lore",
+                "name": "Connaissance des cultures"
+            },
+            "enchantment": {
+                "description": "comprendre les techniques permettant d’enchanter des objets magiques. Pour pouvoir enchanter soi-même des objets, il faut être soit un nain, soit un membre des Apaisés.",
+                "id": "enchantment",
+                "name": "Enchantement"
+            },
+            "engineering": {
+                "description": "connaître les aspects pratiques de la construction, de l’architecture et de l’invention.",
+                "id": "engineering",
+                "name": "Ingénierie"
+            },
+            "evaluation": {
+                "description": "déterminer la valeur de marchandises et d’objets d’art.",
+                "id": "evaluation",
+                "name": "Évaluation"
+            },
+            "healing": {
+                "description": "aider les blessés et les malades.",
+                "id": "healing",
+                "name": "Soins"
+            },
+            "heraldry": {
+                "description": "connaître les blasons et les lignées régnantes.",
+                "id": "heraldry",
+                "name": "Héraldique"
+            },
+            "historical_lore": {
+                "description": "connaître les événements importants et les personnalités influentes des temps passés.",
+                "id": "historical_lore",
+                "name": "Connaissances historiques"
+            },
+            "military_lore": {
+                "description": "connaître la stratégie, la tactique et leurs applications les plus connues.",
+                "id": "military_lore",
+                "name": "Connaissances militaires"
+            },
+            "musical_lore": {
+                "description": "connaître les traditions musicales et les chansons.",
+                "id": "musical_lore",
+                "name": "Connaissances musicales"
+            },
+            "natural_lore": {
+                "description": "connaître la faune et la flore de Thédas.",
+                "id": "natural_lore",
+                "name": "Connaissance de la nature"
+            },
+            "navigation": {
+                "description": "planifier et suivre un itinéraire d’un lieu à un autre.",
+                "id": "navigation",
+                "name": "Orientation"
+            },
+            "poison_lore": {
+                "description": "connaître les poisons, leur utilisation et leur préparation.",
+                "id": "poison_lore",
+                "name": "Connaissance des poisons"
+            },
+            "qun": {
+                "description": "connaître la philosophie du peuple qunari.",
+                "id": "qun",
+                "name": "Qun"
+            },
+            "religious_lore": {
+                "description": "connaître les traditions et pratiques religieuses, notamment celles de la Chantrie.",
+                "id": "religious_lore",
+                "name": "Connaissances religieuses"
+            },
+            "research": {
+                "description": "mener une investigation systématique, généralement à l’aide de témoignages, d’archives et de livres.",
+                "id": "research",
+                "name": "Recherches"
+            },
+            "writing": {
+                "description": "s’exprimer par écrit.",
+                "id": "writing",
+                "name": "Écriture"
+            }
+        },
+        "id": "cunning",
+        "name": "Ruse"
+    },
+    {
+        "description": "La Communication recouvre les aptitudes sociales de votre personnage, ses relations personnelles et sa capacité à interagir avec les autres.",
+        "focus": {
+            "animal_handling": {
+                "description": "interagir avec les animaux et s’occuper d’eux.",
+                "id": "animal_handling",
+                "name": "Soin des animaux"
+            },
+            "bargaining": {
+                "description": "négocier avec les autres et conclure des marchés.",
+                "id": "bargaining",
+                "name": "Marchandage"
+            },
+            "deception": {
+                "description": "mentir aux esprits moins alertes que vous et les rouler.",
+                "id": "deception",
+                "name": "Tromperie"
+            },
+            "disguise": {
+                "description": "donner l’impression d’être quelqu’un d’autre ou d’appartenir à une autre catégorie de personnes.",
+                "id": "disguise",
+                "name": "Déguisement"
+            },
+            "etiquette": {
+                "description": "connaître les conventions sociales de diverses cultures.",
+                "id": "etiquette",
+                "name": "Étiquette"
+            },
+            "gambling": {
+                "description": "jouer aux jeux de hasard et en tirer des bénéfices.",
+                "id": "gambling",
+                "name": "Jeu"
+            },
+            "investigation": {
+                "description": "interroger des gens pour en obtenir des informations, trouver et analyser des indices.",
+                "id": "investigation",
+                "name": "Investigation"
+            },
+            "leadership": {
+                "description": "guider, diriger et inspirer les autres.",
+                "id": "leadership",
+                "name": "Meneur d’hommes"
+            },
+            "performance": {
+                "description": "divertir un public grâce à son talent artistique.",
+                "id": "performance",
+                "name": "Spectacle"
+            },
+            "persuasion": {
+                "description": "convaincre les autres de se rallier à son point de vue.",
+                "id": "persuasion",
+                "name": "Persuasion"
+            },
+            "seduction": {
+                "description": "jouer des coups décisifs au jeu de l’amour.",
+                "id": "seduction",
+                "name": "Séduction"
+            }
+        },
+        "id": "communication",
+        "name": "Communication"
+    },
+    {
+        "description": "La Force représente les prouesses physiques dont votre personnage est capable.",
+        "focus": {
+            "axes": {
+                "description": "combattre à l’aide d’armes du groupe des Haches.",
+                "id": "axes",
+                "name": "Haches"
+            },
+            "bludgeons": {
+                "description": "combattre à l’aide d’armes du groupe des Armes contondantes.",
+                "id": "bludgeons",
+                "name": "Armes contondantes"
+            },
+            "climbing": {
+                "description": "grimper aux murs et autres obstacles verticaux.",
+                "id": "climbing",
+                "name": "Escalade"
+            },
+            "driving": {
+                "description": "diriger des chariots, des charrettes et autres véhicules à roues.",
+                "id": "driving",
+                "name": "Conduite d’attelage"
+            },
+            "heavy blades": {
+                "description": "combattre à l’aide d’armes du groupe des Lames lourdes.",
+                "id": "heavy blades",
+                "name": "Lames lourdes"
+            },
+            "intimidation": {
+                "description": "prendre l’ascendant sur les autres par la présence physique et les menaces.",
+                "id": "intimidation",
+                "name": "Intimidation"
+            },
+            "jumping": {
+                "description": "bondir avec ou sans élan.",
+                "id": "jumping",
+                "name": "Saut"
+            },
+            "lances": {
+                "description": "combattre à l’aide d’armes du groupe des Lances d’arçon.",
+                "id": "lances",
+                "name": "Lances d’arçon"
+            },
+            "might": {
+                "description": "accomplir des tours de force comme soulever ou brandir des objets lourds.",
+                "id": "might",
+                "name": "Vigueur"
+            },
+            "polearms": {
+                "description": "combattre à l’aide d’armes du groupe des Armes d’hast.",
+                "id": "polearms",
+                "name": "Armes d’hast"
+            },
+            "smithing": {
+                "description": "fabriquer des objets en métal, des armes aux bijoux.",
+                "id": "smithing",
+                "name": "Forge"
+            },
+            "spears": {
+                "description": "combattre à l’aide d’armes du groupe des Lances.",
+                "id": "spears",
+                "name": "Lances"
+            }
+        },
+        "id": "strength",
+        "name": "Force"
+    },
+    {
+        "description": "La Perception couvre tous les sens et l’aptitude à interpréter les informations sensorielles.",
+        "focus": {
+            "detect_darkspawn": {
+                "description": "la capacité des gardes des ombres à sentir les engeances proches. Seuls les gardes des ombres peuvent prendre cette compétence.",
+                "id": "detect_darkspawn",
+                "name": "Détection des engeances"
+            },
+            "empathy": {
+                "description": "discerner les sentiments et les émotions des autres.",
+                "id": "empathy",
+                "name": "Empathie"
+            },
+            "hearing": {
+                "description": "utiliser ses perceptions auditives.",
+                "id": "hearing",
+                "name": "Ouïe"
+            },
+            "searching": {
+                "description": "trouver les choses qui sont cachées ou peu évidentes.",
+                "id": "searching",
+                "name": "Fouille"
+            },
+            "seeing": {
+                "description": "utiliser ses perceptions visuelles.",
+                "id": "seeing",
+                "name": "Vue"
+            },
+            "smelling": {
+                "description": "utiliser ses perceptions olfactives.",
+                "id": "smelling",
+                "name": "Odorat"
+            },
+            "tracking": {
+                "description": "suivre des traces et d’autres signes d’un passage.",
+                "id": "tracking",
+                "name": "Pistage"
+            }
+        },
+        "id": "perception",
+        "name": "Perception"
+    },
+    {
+        "description": "La Dextérité englobe l’agilité, la coordination entre les yeux et les mains, et la vitesse.",
+        "focus": {
+            "acrobatics": {
+                "description": "exécuter des manoeuvres de gymnastique, d’équilibre et de chute contrôlée.",
+                "id": "acrobatics",
+                "name": "Acrobatie"
+            },
+            "bows": {
+                "description": "combattre à l’aide d’armes du groupe des Arcs.",
+                "id": "bows",
+                "name": "Arcs"
+            },
+            "brawling": {
+                "description": "combattre à l’aide d’armes du groupe de Bagarre.",
+                "id": "brawling",
+                "name": "Bagarre"
+            },
+            "calligraphy": {
+                "description": "écrire avec assurance et élégance.",
+                "id": "calligraphy",
+                "name": "Calligraphie"
+            },
+            "crafting": {
+                "description": "créer des objets grâce à des aptitudes manuelles comme la sculpture, l’ébénisterie ou le soufflage du verre.",
+                "id": "crafting",
+                "name": "Artisanat"
+            },
+            "dueling": {
+                "description": "combattre à l’aide d’armes du groupe des Armes de duel.",
+                "id": "dueling",
+                "name": "Duel"
+            },
+            "grenades": {
+                "description": "effectuer des attaques à distance à l’aide de grenades.",
+                "id": "grenades",
+                "name": "Grenades"
+            },
+            "initiative": {
+                "description": "agir rapidement dans les situations tendues.",
+                "id": "initiative",
+                "name": "Initiative"
+            },
+            "legerdemain": {
+                "description": "utiliser des tours de passe-passe pour tromper les autres, cacher des objets et faire les poches des gens.",
+                "id": "legerdemain",
+                "name": "Escamotage"
+            },
+            "light_blades": {
+                "description": "combattre à l’aide d’armes du groupe des Lames.",
+                "id": "light_blades",
+                "name": "Lames légères"
+            },
+            "lock_picking": {
+                "description": "ouvrir des serrures sans en utiliser les clefs.",
+                "id": "lock_picking",
+                "name": "Crochetage"
+            },
+            "riding": {
+                "description": "diriger une monture comme un cheval ou un poney.",
+                "id": "riding",
+                "name": "Équitation"
+            },
+            "staves": {
+                "description": "combattre à l’aide d’armes du groupe des Bâtons.",
+                "id": "staves",
+                "name": "Bâtons"
+            },
+            "stealth": {
+                "description": "se déplacer silencieusement tout en restant hors de vue.",
+                "id": "stealth",
+                "name": "Discrétion"
+            },
+            "traps": {
+                "description": "détecter et désamorcer les pièges et autres systèmes mécaniques.",
+                "id": "traps",
+                "name": "Pièges"
+            }
+        },
+        "id": "dexterity",
+        "name": "Dextérité"
+    },
+    {
+        "description": "La Constitution est l’endurance de votre personnage et sa résistance aux blessures.",
+        "focus": {
+            "drinking": {
+                "description": "consommer de grandes quantités d’alcools en évitant le contrecoup.",
+                "id": "drinking",
+                "name": "Grand buveur"
+            },
+            "rowing": {
+                "description": "faire avancer un bateau à la rame.",
+                "id": "rowing",
+                "name": "Canotage"
+            },
+            "running": {
+                "description": "se déplacer rapidement à la fois lors de sprints et de marathons.",
+                "id": "running",
+                "name": "Course"
+            },
+            "stamina": {
+                "description": "supporter la fatigue, la maladie et les privations.",
+                "id": "stamina",
+                "name": "Endurance"
+            },
+            "swimming": {
+                "description": "se déplacer dans l’eau et se maintenir à la surface.",
+                "id": "swimming",
+                "name": "Natation"
+            }
+        },
+        "id": "constitution",
+        "name": "Constitution"
+    }
+]

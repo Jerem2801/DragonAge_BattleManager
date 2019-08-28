@@ -2,6 +2,7 @@ const electron = require('electron');
 const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
 const ipc = electron.ipcMain
+const dialog  = electron.dialog
 
 let mainWindow;
 
@@ -10,7 +11,7 @@ function createWindow () {
   mainWindow = new BrowserWindow({
       width: 800,
       height: 600,
-      frame: false,
+      frame: true,
       movable:true,
       show:false,
       icon: "./image/icone.png",
@@ -18,6 +19,8 @@ function createWindow () {
           nodeIntegration: true
       }
   });
+
+  mainWindow.setMenu(null);
 
   mainWindow.once("ready-to-show", () => {
         mainWindow.show();
@@ -28,7 +31,7 @@ function createWindow () {
     mainWindow = null;
   })
 
-  mainWindow.webContents.openDevTools();
+  //mainWindow.webContents.openDevTools();
 }
 
 app.on('ready', createWindow);
@@ -67,4 +70,9 @@ ipc.on("minimize", function (event, arg) {
 ipc.on("version", function (event) {
     var versionInit = app.getVersion();
     event.sender.send("reponse-version", versionInit);
+})
+
+// EVENT FROM ERROR
+ipc.on("error", function (event,title,msg) {
+    dialog.showErrorBox(title,msg);
 })

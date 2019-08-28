@@ -1,7 +1,7 @@
 #titlebar {
     -webkit-app-region: drag;
 }
-button {
+button,#createCharacterModal {
     -webkit-app-region: no-drag;
 }
 .red{
@@ -18,4 +18,25 @@ button {
 }
 .box-container{
     border-radius: 8px;
+}
+
+.glyphicon {
+    font-size: 10px;
+    color: black;
+}
+.glyphicon-plus:hover {
+    cursor: pointer;
+    color: green;
+}
+.glyphicon-chevron-down {
+    font-size: 1em;
+    color: black;
+}
+.glyphicon-chevron-down:hover {
+    cursor: pointer;
+    color: green;
+}
+.glyphicon-remove:hover {
+    cursor: pointer;
+    color: red;
 }

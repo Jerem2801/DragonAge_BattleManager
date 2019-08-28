@@ -19,5 +19,3 @@ ipc.on('reponse-version', function (event, arg) {
     var versionInit = document.getElementById("version");
     versionInit.innerHTML = arg;
 })
-
-openTab(null,"Character");
