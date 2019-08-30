@@ -13,11 +13,14 @@ Formulaire à remplir :
 	- Classe
 	- Race
 	- Attributs et Focus
+
 	- Rapidité
 	- Armure
 	- Defense
+
 	- Points de Vie
 	- Points de Mana
+	
 	- Arme, jets d'attaque et jet de dégats
 	- Prouesse Favorite
 	- Sorts
@@ -57,6 +60,3 @@ Action possible :
 	- Modifier les PVs d'un Personnage
 	- Afficher le détails du personnage en cours et d'un personnage ciblé
 	- Lanceur de Dé avec Stunt Points
-
-
-

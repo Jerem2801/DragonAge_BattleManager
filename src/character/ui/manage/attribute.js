@@ -62,28 +62,23 @@ function createAttributeNode(attribute){
 	input.style = "width:3em;text-align:center;";
 	input.setAttribute("id",attribute.id);
 
+	var label = document.createElement("label");
+	label.setAttribute("class","labelStyle");
+
 	var h4 = document.createElement("h4");
 	h4.setAttribute("class","w3-left");
+	h4.style = "margin:0";
 
 	var b = document.createElement("b");
-	b.setAttribute("class","w3-tooltip");
-
-	var tooltip = document.createElement("span");
-	tooltip.setAttribute("class","w3-text w3-tiny w3-tag w3-red w3-round-xlarge w3-animate-opacity");
-	tooltip.style = "position:absolute;left:0;bottom:18px";
-
-	var description = document.createTextNode(attribute.description);
-	tooltip.appendChild(description);
-
 	var name = document.createTextNode(attribute.name);
 
 	b.appendChild(name);
-	b.appendChild(tooltip);
 	h4.appendChild(b);
+	label.appendChild(h4);
 
 	div.appendChild(span);
 	div.appendChild(input);
-	div.appendChild(h4);
+	div.appendChild(label);
 
 	document.getElementById("attribute").appendChild(div);
 }
