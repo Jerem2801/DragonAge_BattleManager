@@ -12,20 +12,23 @@ Formulaire à remplir :
 	- Nom
 	- Classe
 	- Race
+
 	- Attributs et Focus
 
 	- Rapidité
 	- Armure
 	- Defense
-
 	- Points de Vie
 	- Points de Mana
-	
+
 	- Arme, jets d'attaque et jet de dégats
+
+
 	- Prouesse Favorite
 	- Sorts
 	- Talents et niveau du talents
 	- Groupe d'armes
+
 	- Equipement avec arme, armure, munitions et objets divers
 
 --- Supprimer un personnage crée ---

@@ -13,6 +13,8 @@ function openTab(evt, tab) {
 
 }
 
+openTab(null,"Character");
+
 ipc.send('version');
 
 ipc.on('reponse-version', function (event, arg) {
