@@ -49,7 +49,7 @@ select:focus {
     display: flex;
 }
 
-.flex-container>div {
+.flex-container > .div-padding {
     padding: 5px;
 }
 
