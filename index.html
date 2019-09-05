@@ -11,8 +11,9 @@
     <title>Dragon Age</title>
 </head>
 <body>
-
-    <div class="w3-sidebar w3-bar-block red w3-text-white w3-card" style="width:8em">
+    
+    <!-- SIDEBAR TAB -->
+    <div class="w3-sidebar w3-bar-block red w3-card" style="width:8em">
         <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'Character')">Personnage</button>
         <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'Fight')">Combat</button>
         <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'Version')">Version</button>
@@ -20,39 +21,42 @@
 
     <div style="margin-left:130px;height:100%">
 
-        <!-- CHARACTER TAB-->
-        <div id="Character" class="w3-container tab" style="display:none;text-align:center;padding:2em">
+        <!-- CHARACTER TAB -->
+        <div id="Character" class="tab tab-containers">
 
-            <div class="w3-card-4 w3-white w3-round-large center-vert w3-animate-opacity" style="max-width: 40em;">
+            <!-- CREATE CHARACTER CONTAINER -->
+            <div class="w3-card-4 w3-white w3-round-large w3-animate-opacity center-vert" style="max-width: 40em;">
 
-                <h3 class="title-container" style="margin:0"><b>Création du Personnage</b></h3>
+                <h3 class="title-container red">Création du Personnage</h3>
 
                 <div class="w3-row">
-                    <div class="w3-half" style="padding:1em;height:5em;">
+                    <div class="w3-half column-create">
                         <input id="name" class="w3-input w3-border w3-round-large" type="text" placeholder="Nom" style="text-align:center" >
                     </div>
-                    <div class="w3-half" style="padding:1em;height:5em">
-                        <button class="w3-btn w3-black w3-text-white w3-round-large"  style="width:100%;height:38px" onClick="createCharacter();">Ajouter</button>
+                    <div class="w3-half column-create">
+                        <button class="w3-btn w3-black w3-text-white w3-round-large button-create" onClick="createCharacter();">Ajouter</button>
                     </div>
                 </div>
 
             </div>
 
+            <!-- CREATE ATTRIBUTE CONTAINER -->
+            <div id="createAttributeContainter" class="container-attribute">
+                <div class="w3-card-4 w3-white w3-round-large w3-animate-opacity center-vert">
 
-            <div id="createCharacterModal" style="display:block;margin-top:2em">
-                <div class="w3-card-4 w3-white w3-round-large center-vert w3-animate-opacity">
-
-                    <h3 class="title-container" style="margin:0"><b>Caractéristique du Personnage</b></h3>
+                    <h3 class="title-container red">Caractéristique du Personnage</h3>
 
                     <div class="w3-row">
 
-                        <div class="w3-half" style="padding:1em;">
+                        <div class="w3-half padding-1">
 
+                            <!-- CLASS & RACE CONTAINER -->
                             <div class="w3-row">
-                                <div class="w3-half" style="padding:1em;">
-                                    <div class="flex-container w3-round-large w3-white" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                                        <div class="ss border-leftll div-padding" style="flex-grow: 1;">Race</div>
-                                        <div class="border-rightll div-padding" style="flex-grow: 4;">
+
+                                <div class="w3-half padding-1">
+                                    <div class="flex-container shadow w3-round-large w3-white">
+                                        <div class="red border-left box-padding grow-1">Race</div>
+                                        <div class="box-padding grow-4">
                                             <select class="w3-border-0" name="option">
                                                 <option value="elven">Elfe</option>
                                                 <option value="human">Humain</option>
@@ -62,10 +66,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="w3-half" style="padding:1em;">
-                                    <div class="flex-container w3-round-large w3-white" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                                        <div class="ss border-leftll div-padding" style="flex-grow: 1;">Classe</div>
-                                        <div class="border-rightll div-padding" style="flex-grow: 4;">
+
+                                <div class="w3-half padding-1">
+                                    <div class="flex-container shadow w3-round-large w3-white">
+                                        <div class="red border-left box-padding grow-1">Classe</div>
+                                        <div class="box-padding grow-4">
                                             <select class="w3-border-0" name="option">
                                                 <option value="warrior">Guerrier</option>
                                                 <option value="mage">Mage</option>
@@ -76,147 +81,155 @@
                                 </div>
                             </div>
 
+                            <!-- STATUS CONTAINER -->
                             <div class="w3-row">
-                                <div class="flex-container" style="flex-wrap: wrap;">
-                                    <div class="shadow box w3-round-large div-padding" style="flex-grow: 1;text-align: center;padding:0">
-                                        <div class="red" style="margin:0;padding:0.2em;border-top-left-radius : 8px;border-top-right-radius : 8px;">Points de Vie</div>
-                                        <input id="name" class="w3-input w3-border-0 w3-round-large" type="text" style="text-align: center;font-size: 20px">
+                                <div class="flex-container flex-wrap">
+                                    <div class="shadow box w3-round-large grow-1">
+                                        <div class="red title-box">Points de Vie</div>
+                                        <input id="name" class="w3-input w3-border-0 w3-round-large" type="text">
                                     </div>
-                                    <div class="shadow box w3-round-large div-padding" style="flex-grow: 1;text-align: center;padding:0">
-                                        <div class="red" style="margin:0;padding:0.2em;border-top-left-radius : 8px;border-top-right-radius : 8px;font-size: 13px;height:25.6px">Points de Mana</div>
-                                        <input id="name" class="w3-input w3-border-0 w3-round-large" type="text" style="text-align: center;font-size: 20px">
+                                    <div class="shadow box w3-round-large grow-1">
+                                        <div class="red title-box" style="font-size: 13px;height:25.6px">Points de Mana</div>
+                                        <input id="name" class="w3-input w3-border-0 w3-round-large" type="text">
                                     </div>
-                                    <div class="shadow box w3-round-large div-padding" style="flex-grow: 1;text-align: center;padding:0">
-                                        <div class="red" style="margin:0;padding:0.2em;border-top-left-radius : 8px;border-top-right-radius : 8px;">Rapidité</div>
-                                        <input id="name" class="w3-input w3-border-0 w3-round-large" type="text" style="text-align: center;font-size: 20px">
+                                    <div class="shadow box w3-round-large grow-1">
+                                        <div class="red title-box">Rapidité</div>
+                                        <input id="name" class="w3-input w3-border-0 w3-round-large" type="text">
                                     </div>
-                                    <div class="shadow box w3-round-large div-padding" style="flex-grow: 1;text-align: center;padding:0">
-                                        <div class="red" style="margin:0;padding:0.2em;border-top-left-radius : 8px;border-top-right-radius : 8px;">Armure</div>
-                                        <input id="name" class="w3-input w3-border-0 w3-round-large" type="text" style="text-align: center;font-size: 20px">
+                                    <div class="shadow box w3-round-large grow-1">
+                                        <div class="red title-box">Armure</div>
+                                        <input id="name" class="w3-input w3-border-0 w3-round-large" type="text">
                                     </div>
-                                    <div class="shadow box w3-round-large div-padding" style="flex-grow: 1;text-align: center;padding:0">
-                                        <div class="red" style="margin:0;padding:0.2em;border-top-left-radius : 8px;border-top-right-radius : 8px;">Défense</div>
-                                        <input id="name" class="w3-input w3-border-0 w3-round-large" type="text" style="text-align: center;font-size: 20px">
+                                    <div class="shadow box w3-round-large grow-1">
+                                        <div class="red title-box">Défense</div>
+                                        <input id="name" class="w3-input w3-border-0 w3-round-large" type="text">
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="w3-row " style="padding:1em;">
+                            <!-- EQUIP WEAPON CONTAINER -->
+                            <div class="w3-row padding-1">
                                 <div class="shadow w3-round-large">
                                     <div class="w3-row">
-                                        <div class="red" style="margin:0;padding:0.2em;border-top-left-radius : 8px;border-top-right-radius : 8px;font-size: 14px;"><b>Arme Equipé</b></div>
+                                        <div class="red title-container">Arme Equipé</div>
                                     </div>
                                     <div class="w3-row">
-                                        <div style="text-align: center;">
-                                            <p class="border-right-white w3-black w3-col s8" style="margin:0;padding: 0;">Arme</p>
-                                            <p class="border-right-white w3-black w3-col s2" style="margin:0;padding: 0;">Attaque</p>
-                                            <p class="w3-black w3-col s2" style="margin:0;padding: 0;">Dégats</p>
+                                        <div class="p-no-p-and-m" style="text-align: center;">
+                                            <p class="border-right-white w3-black w3-col s8">Arme</p>
+                                            <p class="border-right-white w3-black w3-col s2">Attaque</p>
+                                            <p class="w3-black w3-col s2">Dégats</p>
                                         </div>
                                     </div>
                                     <div class="w3-row border-top">
-                                        <div style="display:flex;text-align: center;">
-                                            <p class="border-right w3-col s8" style="margin:0;padding: 0;">Lance</p>
-                                            <p class="border-right w3-col s2" style="margin:0;padding: 0;">3d6 + 6</p>
-                                            <p class="w3-col s2" style="flex-grow: 1;margin:0;padding: 0;">2d6 + 2</p>
+                                        <div class="flex-container" style="text-align: center;">
+                                            <p class="border-right w3-col s8 margin-padding-0">Lance</p>
+                                            <p class="border-right w3-col s2 margin-padding-0">3d6 + 6</p>
+                                            <p class="w3-col s2 margin-padding-0 grow-1">2d6 + 2</p>
                                         </div>
                                     </div>
                                     <div class="w3-row border-top">
-                                        <div style="display:flex;text-align: center;">
-                                            <p class="border-right w3-col s8" style="margin:0;padding: 0;">Hache à 2 Mains</p>
-                                            <p class="border-right w3-col s2" style="margin:0;padding: 0;">3d6 + 6</p>
-                                            <p class="w3-col s2" style="flex-grow: 1;margin:0;padding: 0;">2d6 + 2</p>
+                                        <div class="flex-container" style="text-align: center;">
+                                            <p class="border-right w3-col s8 margin-padding-0">Epée Courte</p>
+                                            <p class="border-right w3-col s2 margin-padding-0">3d6 + 12</p>
+                                            <p class="w3-col s2 margin-padding-0 grow-1">2d6 + 2</p>
                                         </div>
                                     </div>
                                     <div class="w3-row border-top">
-                                        <div style="display:flex;text-align: center;">
-                                            <p class="border-right w3-col s8" style="margin:0;padding: 0;">Epée Courte</p>
-                                            <p class="border-right w3-col s2" style="margin:0;padding: 0;">3d6 + 12</p>
-                                            <p class="w3-col s2" style="flex-grow: 1;margin:0;padding: 0;">2d6 + 2</p>
+                                        <div class="flex-container" style="text-align: center;">
+                                            <p class="border-right w3-col s8 margin-padding-0">Hache</p>
+                                            <p class="border-right w3-col s2 margin-padding-0">3d6 + 13</p>
+                                            <p class="w3-col s2 margin-padding-0 grow-1">2d6 + 7</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="w3-row " style="padding:1em;">
+                            <!-- STUNT CONTAINER -->
+                            <div class="w3-row padding-1">
                                 <div class="shadow w3-round-large">
                                     <div class="w3-row">
-                                        <div class="red" style="margin:0;padding:0.2em;border-top-left-radius : 8px;border-top-right-radius : 8px;font-size: 14px;"><b>Prouesse Favorites</b></div>
+                                        <div class="red title-container">Prouesse Favorites</div>
                                     </div>
 
-                                    <div style="display:flexbox;flex-wrap: wrap;">
-                                        <div class="w3-tag w3-round-large w3-small red shadow" style="margin:0.5em;">
+                                    <div class="flexbox-containter flex-wrap">
+                                        <div class="w3-tag w3-round-large w3-small red shadow margin-1on2">
                                             Rechargement rapide x
                                         </div>
-                                        <div class="w3-tag w3-round-large w3-small red shadow" style="margin:0.5em;">
+                                        <div class="w3-tag w3-round-large w3-small red shadow margin-1on2">
                                             +
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="w3-row " style="padding:1em;">
+                            <!-- TALENT CONTAINER -->
+                            <div class="w3-row padding-1">
                                 <div class="shadow w3-round-large">
                                     <div class="w3-row">
-                                        <div class="red" style="margin:0;padding:0.2em;border-top-left-radius : 8px;border-top-right-radius : 8px;font-size: 14px;"><b>Talent</b></div>
+                                        <div class="red title-container">Talent</div>
                                     </div>
 
-                                    <div style="display:flexbox;flex-wrap: wrap;">
-                                        <div class="w3-tag w3-round-large w3-small red shadow" style="margin:0.5em;">
+                                    <div class="flexbox-containter flex-wrap">
+                                        <div class="w3-tag w3-round-large w3-small red shadow margin-1on2">
                                             Rechargement rapide x
                                         </div>
-                                        <div class="w3-tag w3-round-large w3-small red shadow" style="margin:0.5em;">
+                                        <div class="w3-tag w3-round-large w3-small red shadow margin-1on2">
                                             +
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="w3-row " style="padding:1em;">
+                            <!-- SPELL CONTAINER -->
+                            <div class="w3-row padding-1">
                                 <div class="shadow w3-round-large">
                                     <div class="w3-row">
-                                        <div class="red" style="margin:0;padding:0.2em;border-top-left-radius : 8px;border-top-right-radius : 8px;font-size: 14px;"><b>Sorts</b></div>
+                                        <div class="red title-container">Sorts</div>
                                     </div>
 
-                                    <div style="display:flexbox;flex-wrap: wrap;">
-                                        <div class="w3-tag w3-round-large w3-small red shadow" style="margin:0.5em;">
+                                    <div class="flexbox-containter flex-wrap">
+                                        <div class="w3-tag w3-round-large w3-small red shadow margin-1on2">
                                             Rechargement rapide x
                                         </div>
-                                        <div class="w3-tag w3-round-large w3-small red shadow" style="margin:0.5em;">
+                                        <div class="w3-tag w3-round-large w3-small red shadow margin-1on2">
                                             +
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="w3-row " style="padding:1em;">
+                            <!-- WEAPON GROUP CONTAINER -->
+                            <div class="w3-row padding-1">
                                 <div class="shadow w3-round-large">
                                     <div class="w3-row">
-                                        <div class="red" style="margin:0;padding:0.2em;border-top-left-radius : 8px;border-top-right-radius : 8px;font-size: 14px;"><b>Groupe d'Arme</b></div>
+                                        <div class="red title-container">Groupe d'Arme</div>
                                     </div>
 
-                                    <div style="display:flexbox;flex-wrap: wrap;">
-                                        <div class="w3-tag w3-round-large w3-small red shadow" style="margin:0.5em;">
+                                    <div class="flexbox-containter flex-wrap">
+                                        <div class="w3-tag w3-round-large w3-small red shadow margin-1on2">
                                             Rechargement rapide x
                                         </div>
-                                        <div class="w3-tag w3-round-large w3-small red shadow" style="margin:0.5em;">
+                                        <div class="w3-tag w3-round-large w3-small red shadow margin-1on2">
                                             +
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
 
                         </div>
 
-                        <div class="w3-half" style="padding:1em;margin-top:1em">
-                            <div class="w3-row shadow w3-round-large flex-container" style="margin-bottom:1.6em">
+                        <!-- ATTRIBUTE AND FOCUS CONTAINER -->
+                        <div class="w3-half margin-top-padding-1">
+
+                            <!-- FORCE CONTAINER -->
+                            <div class="w3-row shadow w3-round-large flex-container margin-bottom-1p6">
                                 <div class="w3-col l9 m9 s9">
-                                    <div class="red" style="margin:0;padding:0.2em;border-top-left-radius : 8px;font-size: 14px;"><h4 style="margin:0"><b>Force</b></h4></div>
-                                    <div class="flex-container" style="border-right: 1px solid grey;display:flexbox;flex-wrap: wrap;">
-                                        <div class="w3-tag w3-round-large w3-small red shadow" style="margin:0.5em;">
+                                    <div class="red title-attribute"><h4 class="title-attribute-text">Force</h4></div>
+                                    <div class="flexbox-containter flex-wrap border-right">
+                                        <div class="w3-tag w3-round-large w3-small red shadow margin-1on2">
                                             Escalader x
                                         </div>
-                                        <div class="w3-tag w3-round-large w3-small red shadow" style="margin:0.5em;">
+                                        <div class="w3-tag w3-round-large w3-small red shadow margin-1on2">
                                             +
                                         </div>
                                     </div>
@@ -225,11 +238,13 @@
                                     <input id="name" class="w3-input w3-border-0 w3-round-large" type="text" style="text-align: center;font-size: 25px">
                                 </div>
                             </div>
-                            <div class="w3-row shadow w3-round-large flex-container" style="margin-bottom:2em">
+
+                            <!-- CONSTITUTION CONTAINER -->
+                            <div class="w3-row shadow w3-round-large flex-container margin-bottom-1p6">
                                 <div class="w3-col l9 m9 s9">
-                                    <div class="red" style="margin:0;padding:0.2em;border-top-left-radius : 8px;font-size: 14px;"><h4 style="margin:0"><b>Constitution</b></h4></div>
-                                    <div class="flex-container" style="border-right: 1px solid grey;display:flexbox;flex-wrap: wrap;">
-                                        <div class="w3-tag w3-round-large w3-small red shadow" style="margin:0.5em;">
+                                    <div class="red title-attribute"><h4 class="title-attribute-text">Constitution</h4></div>
+                                    <div class="flexbox-containter flex-wrap border-right">
+                                        <div class="w3-tag w3-round-large w3-small red shadow margin-1on2">
                                             +
                                         </div>
                                     </div>
@@ -238,11 +253,13 @@
                                     <input id="name" class="w3-input w3-border-0 w3-round-large" type="text" style="text-align: center;font-size: 25px">
                                 </div>
                             </div>
-                            <div class="w3-row shadow w3-round-large flex-container" style="margin-bottom:2em">
+
+                            <!-- DEXTERITY CONTAINER -->
+                            <div class="w3-row shadow w3-round-large flex-container margin-bottom-1p6">
                                 <div class="w3-col l9 m9 s9">
-                                    <div class="red" style="margin:0;padding:0.2em;border-top-left-radius : 8px;font-size: 14px;"><h4 style="margin:0"><b>Dextérité</b></h4></div>
-                                    <div class="flex-container" style="border-right: 1px solid grey;display:flexbox;flex-wrap: wrap;">
-                                        <div class="w3-tag w3-round-large w3-small red shadow" style="margin:0.5em;">
+                                    <div class="red title-attribute"><h4 class="title-attribute-text">Dextérité</h4></div>
+                                    <div class="flexbox-containter flex-wrap border-right">
+                                        <div class="w3-tag w3-round-large w3-small red shadow margin-1on2">
                                             +
                                         </div>
                                     </div>
@@ -251,11 +268,13 @@
                                     <input id="name" class="w3-input w3-border-0 w3-round-large" type="text" style="text-align: center;font-size: 25px">
                                 </div>
                             </div>
-                            <div class="w3-row shadow w3-round-large flex-container" style="margin-bottom:2em">
+
+                            <!-- PERCEPTION CONTAINER -->
+                            <div class="w3-row shadow w3-round-large flex-container margin-bottom-1p6">
                                 <div class="w3-col l9 m9 s9">
-                                    <div class="red" style="margin:0;padding:0.2em;border-top-left-radius : 8px;font-size: 14px;"><h4 style="margin:0"><b>Perception</b></h4></div>
-                                    <div class="flex-container" style="border-right: 1px solid grey;display:flexbox;flex-wrap: wrap;">
-                                        <div class="w3-tag w3-round-large w3-small red shadow" style="margin:0.5em;">
+                                    <div class="red title-attribute"><h4 class="title-attribute-text">Perception</h4></div>
+                                    <div class="flexbox-containter flex-wrap border-right">
+                                        <div class="w3-tag w3-round-large w3-small red shadow margin-1on2">
                                             +
                                         </div>
                                     </div>
@@ -264,11 +283,13 @@
                                     <input id="name" class="w3-input w3-border-0 w3-round-large" type="text" style="text-align: center;font-size: 25px">
                                 </div>
                             </div>
-                            <div class="w3-row shadow w3-round-large flex-container" style="margin-bottom:2em">
+
+                            <!-- CUNNING CONTAINER -->
+                            <div class="w3-row shadow w3-round-large flex-container margin-bottom-1p6">
                                 <div class="w3-col l9 m9 s9">
-                                    <div class="red" style="margin:0;padding:0.2em;border-top-left-radius : 8px;font-size: 14px;"><h4 style="margin:0"><b>Ruse</b></h4></div>
-                                    <div class="flex-container" style="border-right: 1px solid grey;display:flexbox;flex-wrap: wrap;">
-                                        <div class="w3-tag w3-round-large w3-small red shadow" style="margin:0.5em;">
+                                    <div class="red title-attribute"><h4 class="title-attribute-text">Ruse</h4></div>
+                                    <div class="flexbox-containter flex-wrap border-right">
+                                        <div class="w3-tag w3-round-large w3-small red shadow margin-1on2">
                                             +
                                         </div>
                                     </div>
@@ -277,11 +298,13 @@
                                     <input id="name" class="w3-input w3-border-0 w3-round-large" type="text" style="text-align: center;font-size: 25px">
                                 </div>
                             </div>
-                            <div class="w3-row shadow w3-round-large flex-container" style="margin-bottom:2em">
+
+                            <!-- MAGIC CONTAINER -->
+                            <div class="w3-row shadow w3-round-large flex-container margin-bottom-1p6">
                                 <div class="w3-col l9 m9 s9">
-                                    <div class="red" style="margin:0;padding:0.2em;border-top-left-radius : 8px;font-size: 14px;"><h4 style="margin:0"><b>Magie</b></h4></div>
-                                    <div class="flex-container" style="border-right: 1px solid grey;display:flexbox;flex-wrap: wrap;">
-                                        <div class="w3-tag w3-round-large w3-small red shadow" style="margin:0.5em;">
+                                    <div class="red title-attribute"><h4 class="title-attribute-text">Magie</h4></div>
+                                    <div class="flexbox-containter flex-wrap border-right">
+                                        <div class="w3-tag w3-round-large w3-small red shadow margin-1on2">
                                             +
                                         </div>
                                     </div>
@@ -290,11 +313,13 @@
                                     <input id="name" class="w3-input w3-border-0 w3-round-large" type="text" style="text-align: center;font-size: 25px">
                                 </div>
                             </div>
-                            <div class="w3-row shadow w3-round-large flex-container" style="margin-bottom:2em">
+
+                            <!-- WILLPOWER CONTAINER -->
+                            <div class="w3-row shadow w3-round-large flex-container margin-bottom-1p6">
                                 <div class="w3-col l9 m9 s9">
-                                    <div class="red" style="margin:0;padding:0.2em;border-top-left-radius : 8px;font-size: 14px;"><h4 style="margin:0"><b>Volonté</b></h4></div>
-                                    <div class="flex-container" style="border-right: 1px solid grey;display:flexbox;flex-wrap: wrap;">
-                                        <div class="w3-tag w3-round-large w3-small red shadow" style="margin:0.5em;">
+                                    <div class="red title-attribute"><h4 class="title-attribute-text">Volonté</h4></div>
+                                    <div class="flexbox-containter flex-wrap border-right">
+                                        <div class="w3-tag w3-round-large w3-small red shadow margin-1on2">
                                             +
                                         </div>
                                     </div>
@@ -303,6 +328,8 @@
                                     <input id="name" class="w3-input w3-border-0 w3-round-large" type="text" style="text-align: center;font-size: 25px">
                                 </div>
                             </div>
+
+
                         </div>
 
                     </div>
@@ -310,15 +337,17 @@
                 </div>
 
             </div>
+
         </div>
 
-        <div id="Fight" class="w3-container tab" style="display:none">
+        <!-- FIGHT TAB-->
+        <div id="Fight" class="tab tab-containers">
 
 
         </div>
 
         <!-- VERSION TAB-->
-        <div id="Version" class="w3-container tab" style="display:none;text-align:center">
+        <div id="Version" class="tab tab-containers">
             <div class="w3-padding"><img src="image/dragonage.png" style="width:75%"/></div>
             <div>
                 <p>Version : <strong id="version"></strong></p>
@@ -337,4 +366,4 @@
     <script src="./src/character/ui/manage/attribute.js"></script>
     <script src="./src/character/creation/creation.js"></script>
 </body>
-</html> -->
+</html>
