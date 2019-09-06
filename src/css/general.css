@@ -1,0 +1,57 @@
+button:focus,input:focus,select:focus{
+    outline: 0;
+}
+select {
+    width: 100%;
+}
+
+/*TAB*/
+.tab{
+    height:100%;
+    margin-left:130px;
+}
+.sidebar{
+    width:8em;
+    background-color:#c10d1f;
+    color:white;
+    text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
+}
+.tab-container{
+    display:none;
+    text-align:center;
+    padding:2em;
+    padding-left:4em;
+    padding-right:4em;
+}
+.title{
+    background-color:#c10d1f;
+    color:white;
+    text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding:0.25em;
+    border-top-left-radius : 8px;
+    border-top-right-radius : 8px;
+    margin:0;
+    font-weight: bold;
+}
+
+.glyphicon {
+    font-size: 10px;
+    color: black;
+}
+.glyphicon-plus:hover {
+    cursor: pointer;
+    color: green;
+}
+.glyphicon-chevron-down {
+    font-size: 1em;
+    color: black;
+}
+.glyphicon-chevron-down:hover {
+    cursor: pointer;
+    color: green;
+}
+.glyphicon-remove:hover {
+    cursor: pointer;
+    color: red;
+}

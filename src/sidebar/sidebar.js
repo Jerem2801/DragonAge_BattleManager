@@ -1,6 +1,6 @@
 function openTab(evt, tab) {
     var i, x, tablinks;
-    x = document.getElementsByClassName("tab");
+    x = document.getElementsByClassName("tab-container");
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
     }
